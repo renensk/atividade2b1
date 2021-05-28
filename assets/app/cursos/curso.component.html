@@ -1,0 +1,29 @@
+<h1 class="center">Cursos</h1>
+
+<table class="table light-table">
+        <tr>
+                <td>{{ cursoVarClasse.nome }}{{ cursoVarClasseAlias.nome }}</td>
+                <td>{{ cursoVarClasse.coordenador }}{{ cursoVarClasseAlias.coordenador }}</td>
+                <td>
+                        <button (click)="onDeleteService()" class="btn btn-danger">DELETE</button>
+                </td>
+        </tr>
+
+</table>
+
+<!-- 
+<article class="panel panel-default" [ngStyle]="{backgroundColor: color, 'font-size.px': tam}">
+        <div class="panel-body">
+                {{ cursoVarClasse.nome }}
+                {{ cursoVarClasseAlias.nome }}
+        </div>
+        <footer class="panel-footer">
+                <div class="author">
+                        {{ cursoVarClasse.coordenador }}
+                        {{ cursoVarClasseAlias.coordenador }}
+                </div>
+                <div class="config">
+                        <a (click)="onDeleteService()"> Delete </a>
+                </div>
+        </footer>
+</article> -->

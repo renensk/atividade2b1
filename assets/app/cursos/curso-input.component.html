@@ -1,0 +1,14 @@
+<div class="col-mds-8 col-md-offset-2">
+    <form (ngSubmit)="onSubmit(refLocalForm)" #refLocalForm="ngForm" ngNativeValidate>
+        <div class="form-group">
+            <label for="myNomengForm">Nome</label>
+            <input type="text" id="myNomengForm" class="form-control" [ngModel]="cursoLoad?.nome" name="myNomengForm"
+                required>
+            <label for="myCoordngForm">Coordenador</label>
+            <input type="text" id="myCoordngForm" class="form-control" [ngModel]="cursoLoad?.coordenador"
+                name="myCoordngForm" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Salve minha mensagem</button>
+        <button type="button" class="btn btn-danger" (click)="onClear(refLocalForm)">Cancelar</button>
+    </form>
+</div>
